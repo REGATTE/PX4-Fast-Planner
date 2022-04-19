@@ -12,6 +12,8 @@ This is a personal project, and functionality is not gauranteed. The author is n
 
 ## Installation
 
+Install all requirements by `pip3 install -r requirements.txt`
+
 Use the bash files in [Installation Folder](/installation). Will only run on **Ubuntu 20.04**.
 
 Run [Main.sh](/installation/main.sh) to install all the requirements.
