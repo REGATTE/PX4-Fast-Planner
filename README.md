@@ -14,7 +14,12 @@ This is a personal project, and functionality is not gauranteed. The author is n
 
 Use the bash files in [Installation Folder](/installation). Will only run on **Ubuntu 20.04**.
 
-Run [Main.sh] to install all the requirements. If you want/need to do it individually, given below is the functionality of each file.
+Run [Main.sh](/installation/main.sh) to install all the requirements.
+```
+$ cd installation
+$ sh main.sh
+```
+If you want/need to do it individually, given below is the functionality of each file.
 
 1. [PX4.sh](/installation/px4.sh): This file install [PX4-Autopilot](https://github.com/PX4/PX4-Autopilot) and installs other requirements like `Gazebo` and other support software.
 
