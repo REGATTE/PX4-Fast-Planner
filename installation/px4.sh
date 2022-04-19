@@ -17,5 +17,3 @@ cd PX4-Autopilot
 make px4_fmu-v5x_default 
 echo "Done Building px4 fmu-v5x"
 # make px4_fmu-v5x_default
-
-cd
