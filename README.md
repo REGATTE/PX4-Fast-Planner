@@ -33,6 +33,8 @@ If you want/need to do it individually, given below is the functionality of each
 
 We would need custom Drone's with Depth Sensing Camera's to work on this project. We are going to add a custom **`Gazebo Camera Plugin`** of a **Depth Sensing Camera** on an existing PX4 drones.
 
+Copy Paste **[depth_camera_new]()** & **[iris_depth_camera]()** to `PX4-Autopilot/Tools/sitl-gazebo/models/`.
+
 1. **[IRIS_DS](/Documentation/IRIS_DepthSensing.md)**
 
 2. **[TYPHOON 480](/Documentation/Typhoon_480_DepthSensing.md)**

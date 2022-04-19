@@ -1,6 +1,6 @@
 ## Setting up typhoon_480_ds custom model into PX4
 
-Steps to add Custom iris_ds model to PX4-Autopilot
+Steps to add Custom typhoon_480_ds model to PX4-Autopilot
 
 1. Copy Paste [Typhoon_480_ds](custom_model/typhoon_480_DepthSensing) folder to `PX4-Autopilot/Tools/sitl/gazebo/models/`. This folder holds the 3D files and structuring of the drone, and how it'll look in the SITL.
 
