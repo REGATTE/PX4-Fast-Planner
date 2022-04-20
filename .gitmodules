@@ -4,3 +4,6 @@
 [submodule "ROS2_WS/px4_ros_com"]
 	path = ROS2_WS/px4_ros_com
 	url = https://github.com/PX4/px4_ros_com
+[submodule "ROS2_WS/Fast-Planner"]
+	path = ROS2_WS/Fast-Planner
+	url = https://github.com/REGATTE/Fast-Planner
