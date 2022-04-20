@@ -13,6 +13,7 @@ if [[ $(lsb_release -rs) == "20.04" ]]; then
     sh installation/FastRTPS_DDS.sh
     sh installation/ROS2_FOXY.sh
     sh installation/px4_ws.sh
+    sh installation/setup.sh 
 else
     echo "Ubuntu Version Not-Compatible"
     echo "Only uses Ubuntu 20.04"
