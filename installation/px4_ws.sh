@@ -6,6 +6,11 @@ echo "----- Build Workspace -----"
 mkdir -p ~/px4_ros_com_ros2/src
 git clone https://github.com/PX4/px4_ros_com.git ~/px4_ros_com_ros2/src/px4_ros_com
 git clone https://github.com/PX4/px4_msgs.git ~/px4_ros_com_ros2/src/px4_msgs
+git clone https://github.com/ros2/rviz.git ~/px4_ros_com_ros2/rviz
+
+cd ~/px4_ros_com_ros2/src/rviz
+git checkout -b galactic  # you could use any ROS distro, I've built it on FOXY, shifting to Galactic branch here so that the RVIZ package would build.
+cd 
 
 cp -R ~/Documents/PX4-Fast-Planner/ROS2_WS/. ~/px4_ros_com_ros2/src
 
