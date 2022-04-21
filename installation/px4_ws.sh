@@ -14,6 +14,6 @@ cd ~/px4_ros_com_ros2/src/px4_ros_com/scripts
 source clean_all.bash
 source build_ros2_workspace.bash
 echo "source ~/px4_ros_com_ros2/install/setup.bash" >> ~/.bashrc
-source ~/.bashrc
+source ${HOME}/.bashrc
 
 echo "Done building Workspace, you can now start developing."
