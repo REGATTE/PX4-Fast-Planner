@@ -10,7 +10,7 @@ def generate_launch_description():
             name="rvizvisualisation",
             package="rviz",
             executable='rviz',
-            output="log",
+            output="log"
         )
     })
 
