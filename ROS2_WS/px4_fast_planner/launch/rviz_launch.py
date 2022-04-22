@@ -12,6 +12,7 @@ def generate_launch_description():
     ld.add_action(
         Node(
             name="rvizvisualisation",
+            output="log"
             package="rviz2",
             executable='rviz2',
             output="log",
