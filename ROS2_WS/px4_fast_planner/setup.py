@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'cps = px4_fast_planner.camera_pose_publisher:main'
         ],
     },
 )
