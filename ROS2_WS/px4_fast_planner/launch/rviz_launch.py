@@ -8,16 +8,18 @@ def generate_launch_description():
 
     base_path = os.chdir("~/px4_ros_com_ros2/src/px4_fast_planner")
     rviz_path = base_path + "/rviz/rviz.rviz"
+
     ld = LaunchDescription()
-    ld.add_action(
-        Node(
-            name="rvizvisualisation",
-            output="log"
-            package="rviz2",
-            executable='rviz2',
-            output="log",
-            arguments = ['-d', str(rviz_path)]
-        ),
+    rviz_launch = Node(
+        name="rvizvisualisation",
+        output="log",
+        package="rviz2",
+        executable="rviz2",
+        arguments=['-d', str(rviz_path)]
     )
 
+    ld.add_action(rviz_launch)
+
     return ld
+
+
