@@ -1,0 +1,3 @@
+[submodule "FAST_PLANNER"]
+	path = FAST_PLANNER
+	url = https://github.com/REGATTE/FAST_PLANNER.git
