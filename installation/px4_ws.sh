@@ -9,7 +9,7 @@ git clone https://github.com/PX4/px4_msgs.git ~/px4_ros_com_ros2/src/px4_msgs
 git clone -b foxy https://github.com/ros2/rviz.git ~/px4_ros_com_ros2/rviz
 
 
-clocp -R ~/Documents/PX4-Fast-Planner/ROS2_WS/. ~/px4_ros_com_ros2/src
+clocp -R ~/Documents/PX4-Fast-Planner/px4_fast_planner ~/px4_ros_com_ros2/src
 
 cd ~/px4_ros_com_ros2/src/px4_ros_com/scripts
 source clean_all.bash
