@@ -12,6 +12,8 @@ git clone -b foxy https://github.com/ros2/rviz.git ~/px4_ros_com_ros2/rviz
 cp -R ~/Documents/PX4-Fast-Planner/px4_fast_planner ~/px4_ros_com_ros2/src
 # copy fast_planner to px4_ros_com_ros2
 cp -R ~/Documents/PX4-Fast-Planner/FAST_PLANNER/ROS2_WS/. ~/px4_ros_com_ros2/src
+# copy custom messages
+cp -R ~/Documents/PX4-Fast-Planner/custom_messages ~/px4_ros_com_ros2/src
 
 cd ~/px4_ros_com_ros2/src/px4_ros_com/scripts
 source clean_all.bash
