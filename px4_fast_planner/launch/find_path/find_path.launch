@@ -1,0 +1,25 @@
+<launch>
+    <!-- Planner configs -->
+    <arg name="max_vel" default="1.0" />
+    <arg name="max_acc" default="2.5" />
+
+    <!-- ROS static transformation -->
+    <node pkg="tf" type="static_transform_publisher" name="world_map_linker" args="0 0 0 0 0 0 world map 100" />
+    <node pkg="tf" type="static_transform_publisher" name="tf_camera" args="0.1 0 0.0 -1.57 0 -1.57 base_link camera_link 33"/>
+
+    <!-- Fast planner -->
+    <include file="$(find px4_fast_planner)/launch/find_path/find_planner.launch" >
+    </include>
+
+    <!-- Camera pose publisher -->
+    <!-- This node publishes tf from parent_frame to child_frame-->
+    <node pkg="px4_fast_planner" name="camera_pose_publisher" type="camera_pose_publisher.py" output="screen">
+        <param name="parent_frame" value="world" />
+        <param name="child_frame" value="camera_link" />
+        <param name="pose_topic" value="camera/pose" />
+    </node>
+
+    <!-- Rviz -->
+    <include file="$(find px4_fast_planner)/launch/rviz.launch" />
+    
+</launch>
