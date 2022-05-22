@@ -125,6 +125,11 @@
     <param name="search/allocate_num" value="100000" type="int"/>
     <param name="search/check_num" value="5" type="int"/>
 
+  <!-- searching path and tau time -->
+     <param name="search/res" value="0.5" type="double"/>
+     <param name="search/time_res" value="1.0" type="double"/>
+     <param name="search/time_res_init" value="0.05" type="double"/>
+     
   <!-- trajectory optimization -->
     <param name="optimization/lambda1" value="10.0" type="double"/>
     <param name="optimization/lambda2" value="0.8" type="double"/>
