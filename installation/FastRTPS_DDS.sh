@@ -11,7 +11,7 @@ sdk install gradle 6.3
 echo "Done installing Gradle"
 echo "cloning Fast RTPS Gen"
 # Fast-RTPS-Gen
-git clone --recursive https://github.com/eProsima/Fast-DDS-Gen.git -b v1.0.4 ~/Fast-RTPS-Gen \
+git clone --recursive https://github.com/eProsima/Fast-DDSGen.git -b v1.0.4 ~/Fast-RTPS-Gen \
     && cd ~/Fast-RTPS-Gen \
     && gradle assemble \
     && sudo env "PATH=$PATH" gradle install
